@@ -1,0 +1,9 @@
+config.asp		支付帐号和参数配置，测试帐号的可能无权限支付，请使用您申请的帐号
+index.asp		demo链接入口
+notify.asp		回调通知处理模块
+
+demo文件夹下的文件说明
+feedback.asp	维权接口返回
+jsapi.asp		jsapid接口demo
+native.asp		native接口demo
+nativecall.asp	notive接口商品信息回调

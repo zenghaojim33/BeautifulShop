@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BWMDatePicker">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etS-RD-eHR" userLabel="Container View" customClass="CSAnimationView">
+                    <rect key="frame" x="10" y="258" width="300" height="212"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1g-Px-QuV">
+                            <rect key="frame" x="0.0" y="183" width="150" height="29"/>
+                            <color key="backgroundColor" red="0.88235294119999996" green="0.0" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="I37-Vn-dol"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="确认">
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="mlI-tO-gCg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thu-5n-Ndh">
+                            <rect key="frame" x="150" y="183" width="150" height="29"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="关闭">
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="closeBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="16m-1d-8xK"/>
+                            </connections>
+                        </button>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukv-ku-TCl">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="180"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="P55-x9-Vn9"/>
+                            </constraints>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="thu-5n-Ndh" firstAttribute="top" secondItem="ukv-ku-TCl" secondAttribute="bottom" constant="3" id="3wm-BG-UvV"/>
+                        <constraint firstAttribute="trailing" secondItem="ukv-ku-TCl" secondAttribute="trailing" id="8fW-ka-Juz"/>
+                        <constraint firstItem="thu-5n-Ndh" firstAttribute="width" secondItem="T1g-Px-QuV" secondAttribute="width" id="9E8-DX-Z6Y"/>
+                        <constraint firstItem="ukv-ku-TCl" firstAttribute="top" secondItem="etS-RD-eHR" secondAttribute="top" id="NwT-xb-bxu"/>
+                        <constraint firstItem="T1g-Px-QuV" firstAttribute="top" secondItem="ukv-ku-TCl" secondAttribute="bottom" constant="3" id="Pvg-pF-MlE"/>
+                        <constraint firstAttribute="height" constant="212" id="fud-cD-gct"/>
+                        <constraint firstItem="ukv-ku-TCl" firstAttribute="leading" secondItem="etS-RD-eHR" secondAttribute="leading" id="gvE-e0-nVZ"/>
+                        <constraint firstItem="thu-5n-Ndh" firstAttribute="leading" secondItem="T1g-Px-QuV" secondAttribute="trailing" id="kU8-Lz-fIe"/>
+                        <constraint firstItem="thu-5n-Ndh" firstAttribute="leading" secondItem="T1g-Px-QuV" secondAttribute="trailing" id="oMZ-e9-yep"/>
+                        <constraint firstAttribute="trailing" secondItem="thu-5n-Ndh" secondAttribute="trailing" id="sWg-hG-IFH"/>
+                        <constraint firstItem="T1g-Px-QuV" firstAttribute="leading" secondItem="etS-RD-eHR" secondAttribute="leading" id="tcA-N8-1sN"/>
+                        <constraint firstItem="thu-5n-Ndh" firstAttribute="height" secondItem="T1g-Px-QuV" secondAttribute="height" id="teC-X2-Ldo"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="bounceUp"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="etS-RD-eHR" secondAttribute="trailing" constant="10" id="4Rr-e1-k2Q"/>
+                <constraint firstAttribute="bottom" secondItem="etS-RD-eHR" secondAttribute="bottom" constant="10" id="kE7-Wp-u7U"/>
+                <constraint firstItem="etS-RD-eHR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="y0s-k5-FW0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeBtn" destination="thu-5n-Ndh" id="Zu6-A7-oLk"/>
+                <outlet property="confirmBtn" destination="T1g-Px-QuV" id="MOn-oq-QhZ"/>
+                <outlet property="containerView" destination="etS-RD-eHR" id="Bq2-IV-S1q"/>
+                <outlet property="datePicker" destination="ukv-ku-TCl" id="GZI-67-gnf"/>
+            </connections>
+            <point key="canvasLocation" x="117" y="143"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  BeautifulShop
+//
+//  Created by BeautyWay on 14-10-10.
+//  Copyright (c) 2014年 jenk. All rights reserved.
+//
+
+//#ifndef BeautifulShop_PrefixHeader_pch
+//#define BeautifulShop_PrefixHeader_pch
+
+#ifdef __OBJC__
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "SBJSON.h"
+#import "MBProgressHUD.h"
+#import "JSONData.h"
+#import "KEY.h"
+#import "ShareInfo.h"
+#import "MJRefresh.h"
+#import "Tools.h"
+#import "WXApi.h"
+#import <CommonCrypto/CommonDigest.h>//MD5 C99 报错
+
+#define WEB_API @"http://server.mallteem.com"
+
+#import "UIImageView+WebCache.h"
+//#endif
+#endif

@@ -1,0 +1,10 @@
+TenpayUtil.cs		支付帐号和参数配置，测试帐号的可能无权限支付，请使用您申请的帐号
+index.aspx		demo链接入口
+payNotifyUrl.aspx	回调通知处理
+
+demo文件夹下的文件说明
+
+feedback.aspx	        维权接口返回
+jsapi.aspx		jsapid接口demo
+native.aspx		native接口demo
+nativecall.aspx	        notive接口商品信息回调

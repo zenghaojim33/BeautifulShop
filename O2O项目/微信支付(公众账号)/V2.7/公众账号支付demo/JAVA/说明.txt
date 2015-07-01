@@ -1,0 +1,15 @@
+
+demo说明：
+
+config.jsp		支付帐号和参数配置，测试帐号的可能无权限支付，请使用您申请的帐号
+index.jsp		demo链接入口
+notify.jsp		回调通知处理模块
+
+
+
+  Demo文件夹下的文件说明
+
+    feedback.jsp	        维权接口返回
+    jsapi.jsp		        jsapid接口demo
+    native.jsp		        native接口demo
+    nativecall.jsp	        native接口商品信息回调
